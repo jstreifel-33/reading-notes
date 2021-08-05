@@ -4,7 +4,7 @@ Hello, and welcome to my reading notes! My name is Joseph Streifel (@jstreifel-3
 Looking for my portfolio but ended up here instead?
 Please follow this link: [github portfolio](https://jstreifel-33.github.io)
 
-# Assignment
+# Current Assignment
 
 ## The Growth Mindset
 Reference: [How you can benefit from a growth mindset](https://www.atlassian.com/blog/inside-atlassian/growth-mindset)
