@@ -32,6 +32,6 @@ It may cliche, but as Einstein once said:
 >The important thing is to never stop questioning.
    
 
-# Archived assignment notes:
+# Archived assignments and notes:
 ### Code 102
 [Lab 01b, Learning Markdown: Growth Mindset](/archive/growth_mindset.md)
