@@ -1,8 +1,9 @@
 # Foreward
 Hello, and welcome to my reading notes! My name is Joseph Streifel (@jstreifel-33), but you can call me Joe. In the future this page will likely work as a table of contents archiving assignments. For now it's dedicated to a relection on The Growth Mindset. Enjoy!
 
-Looking for my portfolio but ended up here instead?
-Please follow this link: [github portfolio](https://jstreifel-33.github.io)
+Looking for my Github profile or portfolio but ended up here instead?
+Github Profile: [jstreifel-33](https://github.com/jstreifel-33)
+Portfolio: [Joe Streifel's portfolio](https://jstreifel-33.github.io)
 
 # Current Assignment
 
