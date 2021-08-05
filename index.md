@@ -1,5 +1,5 @@
 # Foreward
-Hello, and welcome to my reading notes! My name is Joseph Streifel (@jstreifel-33), but you can call me Joe. In the future this page will likely work as a table of contents archiving assignments. For now it's dedicated to relection on The Growth Mindset. Enjoy!
+Hello, and welcome to my reading notes! My name is Joseph Streifel (@jstreifel-33), but you can call me Joe. In the future this page will likely work as a table of contents archiving assignments. For now it's dedicated to a relection on The Growth Mindset. Enjoy!
 
 Looking for my portfolio but ended up here instead?
 Please follow this link: [github portfolio](https://jstreifel-33.github.io)
@@ -10,13 +10,13 @@ Please follow this link: [github portfolio](https://jstreifel-33.github.io)
 Reference: [How you can benefit from a growth mindset](https://www.atlassian.com/blog/inside-atlassian/growth-mindset)
 
 #### In your own words...
-The idea of the **growth mindset** seems most easily defined by contrasting it with its opposite, the **fixed mindset.** Where a growth mindset looks to expand skill-sets, knowledge, and horizons, a fixed mindset believes that these things are already set. If a task is seen as too difficult a fixed mindset will conclude that the task is impossible, as it must be outside the scope of our abilities. A growth mindset, however, when presented with task of similar difficulty will see the task as a goal of sorts. A growth mindset is understanding that don't have to be bounds on an individual's capabilities.
+The idea of the **growth mindset** seems most easily defined by contrasting it with its opposite, the **fixed mindset.** Where a growth mindset looks to expand skill-sets, knowledge, and horizons, a fixed mindset believes that these things are already defined and set the limits of our capabilities. If a task is seen as too difficult a fixed mindset will conclude that the task is impossible, as it must be outside the scope of our abilities. A growth mindset, however, when presented with a task of similar difficulty will see the task as a goal of sorts. A growth mindset is understanding that through work and effort we can change the boundaries of what appears currently possible given our situation.
 
-Similarly, a person with a growth mindset will not see the abilities and accomplishments of others as a boundary upon themselves. Skills and knowledge don't have to be a zero sum game. When you make a breakthrough in a team, share your process in addition to your progress.
+Similarly, a person with a growth mindset will not see the abilities and accomplishments of others as a boundary upon themselves. Skills and knowledge don't have to be a zero sum game. Accomplishments can be shared and should be congratulated in others. A team can grow faster together by sharing breakthroughs and teaching each other, rather than coveting new skills like they're secret knowledge.
 
 Having a growth mindset allows a person to walk into a situation oblivious and walk out with something new. Being clueless in something, while never *ideal*, should be treated a starting point for something greater, rather than a dead end or hole never to be climbed out of.
 
-Format: ![Your brain on growth mindset](https://blueseatblogs.com/wp-content/uploads/2018/07/consciousness-709143.jpg)
+![Your brain on growth mindset](https://blueseatblogs.com/wp-content/uploads/2018/07/consciousness-709143.jpg)
 
 All of that being said, let's get into:
 
