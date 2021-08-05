@@ -33,4 +33,5 @@ It may cliche, but as Einstein once said:
    
 
 # Archived assignment notes:
-[Code 102: Growth Mindset](.archive/growth_mindset.md)
+### Code 102
+[Lab 01b, Learning Markdown: Growth Mindset](/archive/growth_mindset.md)
