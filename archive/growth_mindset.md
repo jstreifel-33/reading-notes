@@ -1,4 +1,4 @@
-## The Growth Mindset
+## Lab01b: The Growth Mindset
 Reference: [How you can benefit from a growth mindset](https://www.atlassian.com/blog/inside-atlassian/growth-mindset)
 
 #### In your own words...
