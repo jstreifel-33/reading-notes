@@ -16,6 +16,8 @@ Similarly, a person with a growth mindset will not see the abilities and accompl
 
 Having a growth mindset allows a person to walk into a situation oblivious and walk out with something new. Being clueless in something, while never *ideal*, should be treated a starting point for something greater, rather than a dead end or hole never to be climbed out of.
 
+Format: ![Your brain on growth mindset](https://blueseatblogs.com/wp-content/uploads/2018/07/consciousness-709143.jpg)
+
 All of that being said, let's get into:
 
 #### How can *I* maintain a growth mindset?
