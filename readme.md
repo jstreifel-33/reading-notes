@@ -14,8 +14,8 @@ Portfolio: [Joe Streifel's portfolio](https://jstreifel-33.github.io)
 
 [The Growth Mindset](/archive/growth_mindset.md)\
 [Understanding Text Editors and the Terminal](/archive/editors-and-terminals.md)\
-[Introduction to Git](/archive/git-intro.md)\
+[Introduction to Git](/archive/git-intro.md)
 
 #### Reflections
 
-[Learning Markdown](/reflections/learning-markdown.md)\
+[Learning Markdown](/reflections/learning-markdown.md)
