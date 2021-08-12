@@ -1,3 +1,5 @@
-This Archive is to be used for keeping track of old notes and assignments.
+# Welcome to the archive
 
-As time progresses, the main page of [reading notes](jstreifel-33.github.io/reading-notes) will act as a table of contents to redirect to various reading notes for the class.
+This folder is to store reading assignments. Reflections will be contained in a separate folder.
+
+The main page of [reading notes](jstreifel-33.github.io/reading-notes) will act as a table of contents to redirect to various files in this folder.
