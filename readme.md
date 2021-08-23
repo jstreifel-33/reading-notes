@@ -1,4 +1,4 @@
-# Foreward
+# Foreword
 
 Hello, and welcome to my reading notes! My name is Joseph Streifel (@jstreifel-33), but you can call me Joe. This page is for organizing my reading notes from my journey as 
 
