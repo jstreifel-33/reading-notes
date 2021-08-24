@@ -1,6 +1,6 @@
 # Intro to CSS
 
-CSS (**C**ascading **S**tyle **S**heets) is used to change how a wesite *looks*. It is used in combination with HTML, which controls the structure of a website. HTML has a universal default style that applies to each element, but with CSS we can make a website look much more unique.
+CSS (**C**ascading **S**tyle **S**heets) is used to change how a website *looks*. It is used in combination with HTML, which controls the structure of a website. HTML has a universal default style that applies to each element, but with CSS we can make a website look much more unique.
 
 ## CSS Syntax
 
@@ -17,11 +17,11 @@ p {
 }
 ```
 
-In CSS, we first define the element that we want to syle (h1 or p, in the example). We then open up curly brackets and state **property and value pairs** in accordance with the style we want to achieve. Our example above will style h1 to be colored red and 5 times the standard font size. It will also style p to be colored black.
+In CSS, we first define the element that we want to style (h1 or p, in the example). We then open up curly brackets and state **property and value pairs** in accordance with the style we want to achieve. Our example above will style h1 to be colored red and 5 times the standard font size. It will also style p to be colored black.
 
 ## CSS Modules and Specifications
 
-CSS contains a massive library of properties. As a result, the language is broken up into more digestable **modules** that contain related properties. An example of this is the *Backgrounds and Borders* module which contains the `background-color` and `border-color` properties.
+CSS contains a massive library of properties. As a result, the language is broken up into more digestible **modules** that contain related properties. An example of this is the *Backgrounds and Borders* module which contains the `background-color` and `border-color` properties.
 
 All web standards technologies are contained in large documents called **specifications**. These are published and maintained by various standards organizations, such as W3C, WHATWG, ECMA, or Khronos. While these are mostly for engineers, it's good to know they exist. CSS specifically is developed by the [CSS Working Grounp](https://www.w3.org/Style/CSS/), a group from within the W3C.
 
@@ -147,7 +147,7 @@ The `color` property of CSS defines the color of text. This sounds simple enough
     body {color: hsla(89, 43%, 51%, 0.6);}
     ```
 
-Experiment with CSS colors, and check out color references like the one availale from [Adobe](https://color.adobe.com/create/color-wheel)
+Experiment with CSS colors, and check out color references like the one available from [Adobe](https://color.adobe.com/create/color-wheel)
 
 References:<br>
 [MDN What is CSS?](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)<br>
