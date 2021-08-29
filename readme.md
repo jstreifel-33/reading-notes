@@ -17,7 +17,8 @@ Portfolio: [Joe Streifel's portfolio](https://jstreifel-33.github.io)
 [Introduction to Git](/archive/git-intro.md)\
 [Getting Started with HTML](/archive/html-structure.md)\
 [Intro to CSS](/archive/css-intro.md)\
-[Intro to JavaScript](/archive/js-intro.md)
+[Intro to JavaScript](/archive/js-intro.md)\
+[Programming with JavaScript](/archive/js-programming.md)
 
 #### Reflections
 
