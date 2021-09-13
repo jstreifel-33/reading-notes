@@ -117,7 +117,7 @@ document.write('Good afternoon!');
 
 Will write "Good afternoon!" to the document element of the assciated HTML page when the script is executed.
 
-Sources:
-HTML & CSS, by Jon Duckett
-JavaScript & JQuery, by Jon Duckett
+Sources:\
+HTML & CSS, by Jon Duckett\
+JavaScript & JQuery, by Jon Duckett\
 Associated Site: (htmlandcssbook.com))[http://www.htmlandcssbook.com/]
