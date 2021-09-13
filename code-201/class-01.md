@@ -63,7 +63,7 @@ HTML5 entroduced several new elements and features that were previously arranged
 - `<figure>` `<figcaption>` - Used contain content that is not a direct part of the page's main flow. Not limited to images.
 - `<a>` attribute and block elements - HTML5 allows for the `<a>` tag to be used around elements besides text, such as the `<article>` element.
 
-For a webpage example using these new tools, refer to this htmlandcssbook.com (reference website)[http://www.htmlandcssbook.com/code-samples/chapter-17/example-with-links.html]
+For a webpage example using these new tools, refer to this htmlandcssbook.com [reference website](http://www.htmlandcssbook.com/code-samples/chapter-17/example-with-links.html)
 
 Older browsers will treat the new elements as in-line elements, so certain workarounds are necessary using CSS and JavaScript.
 
@@ -120,4 +120,4 @@ Will write "Good afternoon!" to the document element of the assciated HTML page 
 Sources:\
 HTML & CSS, by Jon Duckett\
 JavaScript & JQuery, by Jon Duckett\
-Associated Site: (htmlandcssbook.com))[http://www.htmlandcssbook.com/]
+Associated Site: [htmlandcssbook.com](http://www.htmlandcssbook.com/)
