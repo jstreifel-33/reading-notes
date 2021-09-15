@@ -49,7 +49,7 @@ Boxes can be hidden using the `visibility` property. Acceptable values are `hidd
 
 ## Arrays
 
-Arrays are special variables that store multiple values. Imagine an array as a list, indexed from 0. The length of an array (how many values are stored) can be found using the `.length` keyword. 
+Arrays are special variables that store multiple values. Imagine an array as a list, indexed from 0. The length of an array (how many values are stored) can be found using the `.length` keyword.
 
 Arrays can be assigned using a literal assignment of an the array constructor.
 
