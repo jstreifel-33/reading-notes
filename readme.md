@@ -30,7 +30,7 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 03. [HTML Lists, the CSS Box Model, and JS Control Flow](/code-201/class-03.md)
 04. [HTML Links, JS Functions, and Intro to CSS Layout](/code-201/class-04.md)
 05. situ
-06. amet
+06. [Problem Domain, Objects, and the DOM](/code-201/class-06.md)
 07. consectetur
 08. adipiscing
 09. elit
