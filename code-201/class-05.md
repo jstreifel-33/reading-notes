@@ -18,7 +18,7 @@ It is helpful to know which image format is best for saving images:
 
 * JPEG - Best used for images that contain a lot of different colors.
 * PNG - Best used for images with few colors or large areas of the same color. Also used for images that include areas of transparency.
-* GIF - Used for animated images. Generally follows the same rules as PNG (there are static GIFS), but usually animated.
+* GIF - Used for animated images. Generally follows the same rules as PNG (there are static GIFs), but usually animated.
 
 ### HTML5 Figures
 
@@ -53,7 +53,7 @@ CSS allows us to change the font to fit our needs:
   * `src:` - The path to the font.
   * `format:` - Specifies the format the font is supplied in.
 * `font-weight:` - Can be used to bold text. Accepts `normal` and `bold` as values.
-* `font-style:` - Used to create itallic text. Accepts `normal` `italic` and `oblique` values.
+* `font-style:` - Used to create italic text. Accepts `normal` `italic` and `oblique` values.
 * `text-transform:` - Changes the case of text.
 * `text-decoration:` - Applies decoration. Values: `none`, `overline`, `line-through`, `blink`
 * `line-height:` - Specifies how much space should be between the bottom of one line of the text and the bottom of the next. Useful for spacing paragraphs.
@@ -67,6 +67,6 @@ There are other pseudo-classes that can be used to provide a feeling of interact
 
 * `:hover` - changes the style of an element when the user places their mouse of it.
 * `:active` - changes the style of an element when activated by the user. This can be used to make buttons feel like they're being pushed by using subtle style changes.
-* `:focus` - applied when an element is focused bythe user.
+* `:focus` - applied when an element is focused by the user.
 
 NOTE: when pseudo-classes are used they should be in this order: `:link`, `:visited`, `:hover`, `:focus`, `:active`
