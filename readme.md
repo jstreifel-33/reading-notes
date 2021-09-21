@@ -29,7 +29,7 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 02. [Basics of HTML, CSS, and JavaScript](/code-201/class-02.md)
 03. [HTML Lists, the CSS Box Model, and JS Control Flow](/code-201/class-03.md)
 04. [HTML Links, JS Functions, and Intro to CSS Layout](/code-201/class-04.md)
-05. situ
+05. [Images, Colors, and Text](/code-201/class-05.md)
 06. [Problem Domain, Objects, and the DOM](/code-201/class-06.md)
 07. consectetur
 08. adipiscing
