@@ -32,7 +32,7 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 05. [Images, Colors, and Text](/code-201/class-05.md)
 06. [Problem Domain, Objects, and the DOM](/code-201/class-06.md)
 07. [Object-Oriented Programming, HTML Tables](/code-201/class-07.md)
-08. adipiscing ooga booga
+08. [CSS Styling Revisited](/code-201/class-08.md)
 09. elit
 10. sed
 11. do
