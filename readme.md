@@ -33,7 +33,7 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 06. [Problem Domain, Objects, and the DOM](/code-201/class-06.md)
 07. [Object-Oriented Programming, HTML Tables](/code-201/class-07.md)
 08. [CSS Styling Revisited](/code-201/class-08.md)
-09. elit
+09. [Forms and JS Events](/code-201/class-09.md)
 10. sed
 11. do
 12. eiusmod
