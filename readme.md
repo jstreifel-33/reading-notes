@@ -34,7 +34,7 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 07. [Object-Oriented Programming, HTML Tables](/code-201/class-07.md)
 08. [CSS Styling Revisited](/code-201/class-08.md)
 09. [Forms and JS Events](/code-201/class-09.md)
-10. sed
+10. [JS Error Handling and Debugging](/code-201/class-10.md)
 11. do
 12. eiusmod
 13. tempor
