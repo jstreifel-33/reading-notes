@@ -35,7 +35,7 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 08. [CSS Styling Revisited](/code-201/class-08.md)
 09. [Forms and JS Events](/code-201/class-09.md)
 10. [JS Error Handling and Debugging](/code-201/class-10.md)
-11. do
+11. [Audio, Video, Images](/code-201/class-11.md)
 12. eiusmod
 13. tempor
 14. incididunt
