@@ -1,5 +1,7 @@
 # Local Storage
 
+Source: [Dive into HTML5: Local Storage](http://diveinto.html5doctor.com/storage.html)
+
 ## The Before Times
 
 Before HTML5, there wasn't a universal way to store user data. There were cookies, which could store small amounts of data but were a poor solution because they slow down a browser if used too heavily.
