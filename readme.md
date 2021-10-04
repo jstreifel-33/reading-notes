@@ -38,5 +38,5 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 11. [Audio, Video, Images](/code-201/class-11.md)
 12. [Chart.js and Canvas](/code-201/class-12.md)
 13. [Local Storage](/code-201/class-13.md)
-14. incididunt
-15. ut
+14. [CSS Transforms, Transition, and Animations](code-201/class-14a.md)
+15. [What Google Learned About Teams](code-201/class-14b.md)
