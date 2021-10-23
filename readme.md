@@ -1,5 +1,7 @@
 # Foreword
 
+>Read, read, read. -William Faulkner
+
 Hello, and welcome to my reading notes! My name is **Joseph Streifel** (@jstreifel-33), but you can call me **Joe**. This page is for organizing my reading notes from my journey as a budding developer.
 
 Looking for my Github profile or portfolio but ended up *here* instead?\
@@ -8,7 +10,7 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 
 ## Table of contents
 
-### Code 102 Reading Notes
+## Code 102 - Intro to Software Development
 
 01. [The Growth Mindset](/archive/growth_mindset.md)
 02. [Understanding Text Editors and the Terminal](/archive/editors-and-terminals.md)
@@ -19,11 +21,11 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 07. [Programming with JavaScript](/archive/js-programming.md)
 08. [JavaScript Loops](/archive/js-loops.md)
 
-#### Reflection Assignments
+### Reflection Assignments
 
 [Learning Markdown](/reflections/learning-markdown.md)
 
-### Code 201 Reading Notes
+## Code 201 - Foundations of Software Development
 
 01. [Introductory HTML and JavaScript](/code-201/class-01.md)
 02. [Basics of HTML, CSS, and JavaScript](/code-201/class-02.md)
@@ -40,3 +42,7 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 13. [Local Storage](/code-201/class-13.md)
 14. [CSS Transforms, Transition, and Animations](code-201/class-14a.md)
 15. [What Google Learned About Teams](code-201/class-14b.md)
+
+## Code 301 - Intermediate Software Development
+
+## Code 401 - Advanced Software Development
