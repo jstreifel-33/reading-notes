@@ -46,5 +46,6 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 ## Code 301 - Intermediate Software Development
 
 01. [Introduction to React and Components](/code-301/class-01.md)
+02. [React States and Props](/code-301/class-02.md)
 
 ## Code 401 - Advanced Software Development
