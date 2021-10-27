@@ -88,3 +88,6 @@ Source *(video)*: [How to Pass Functions Between Components](https://www.youtube
 * **How does the child component invoke a method that was passed to it from a parent component?**
   * The child component can invoke an inherited method using using `this.props.parFun()`, in the case of our example. The method is stored in the component's props so it is accessed the same way as any other prop.
   
+## Things I want to know more about
+
+The video didn't touch on passing functions down through multiple children, which I'm curious about. I assume it's still like props but I just realize that I'm not sure how props do that either. Do they have to be passed through each consecutive child, or is there a way to bypass several "generations," so to speak?
