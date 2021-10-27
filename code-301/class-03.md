@@ -84,7 +84,7 @@ Source *(video)*: [How to Pass Functions Between Components](https://www.youtube
 * **In your own words, what does the `increment` function do in the video demo?**
   * In the video demo `increment` uses an if conditional within `.map()` to search an array in the parent state for an object with a matching `name:` value. If matching, `increment` increases the associated `count:`property when invoked and returns a new array of objects, which is then assigns to the parent state in place of the original array.
 * **How can you pass a method from a parent component into a child component?**
-  * As a prop, just like any piece of data. `parFun = {this.parFun}` will pass the parFun method (this.parFun) as a prop from a parent to a child method component.
+  * As a prop, just like any piece of data. `parFun = {this.parFun}` will pass the parFun method (this.parFun) as a prop from a parent to a child component.
 * **How does the child component invoke a method that was passed to it from a parent component?**
   * The child component can invoke an inherited method using using `this.props.parFun()`, in the case of our example. The method is stored in the component's props so it is accessed the same way as any other prop.
   
