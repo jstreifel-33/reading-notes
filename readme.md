@@ -49,5 +49,6 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 02. [React States and Props](/code-301/class-02.md)
 03. [Passing Functions as Props](/code-301/class-03.md)
 04. [React and Forms](/code-301/class-04.md)
+05. [Putting it All Together](/code-301/class-05.md)
 
 ## Code 401 - Advanced Software Development
