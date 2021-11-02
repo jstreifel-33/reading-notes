@@ -51,5 +51,6 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 04. [React and Forms](/code-301/class-04.md)
 05. [Putting it All Together](/code-301/class-05.md)
 06. [NODE.JS intro](/code-301/class-06.md)
+07. [Introduction to REST](/code-301/class-07.md)
 
 ## Code 401 - Advanced Software Development
