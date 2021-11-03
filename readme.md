@@ -52,5 +52,6 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 05. [Putting it All Together](/code-301/class-05.md)
 06. [NODE.JS intro](/code-301/class-06.md)
 07. [Introduction to REST](/code-301/class-07.md)
+08. [API Design Best Practices](/code-301/class-08.md)
 
 ## Code 401 - Advanced Software Development
