@@ -54,5 +54,6 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 07. [Introduction to REST](/code-301/class-07.md)
 08. [API Design Best Practices](/code-301/class-08.md)
 09. [Functional Programming](/code-301/class-09.md)
+10. [Object.keys, Object.values, and Object.entries](/code-301/class-10.md)
 
 ## Code 401 - Advanced Software Development
