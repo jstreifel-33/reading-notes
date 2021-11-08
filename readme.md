@@ -55,5 +55,6 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 08. [API Design Best Practices](/code-301/class-08.md)
 09. [Functional Programming](/code-301/class-09.md)
 10. [In memory storage](/code-301/class-10.md)
+11. [Mongo and Mongoose](/code-301/class-11.md)
 
 ## Code 401 - Advanced Software Development
