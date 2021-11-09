@@ -56,5 +56,6 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 09. [Functional Programming](/code-301/class-09.md)
 10. [In memory storage](/code-301/class-10.md)
 11. [Mongo and Mongoose](/code-301/class-11.md)
+12. [CRUD](code-301/class-12.md)
 
 ## Code 401 - Advanced Software Development
