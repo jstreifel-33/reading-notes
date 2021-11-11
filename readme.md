@@ -58,5 +58,6 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 11. [Mongo and Mongoose](/code-301/class-11.md)
 12. [CRUD](code-301/class-12.md)
 13. [Diversity & Inclusion in the Tech Industry](code-301/class-13.md)
+14. [Authentication](code-301/class-14.md)
 
 ## Code 401 - Advanced Software Development
