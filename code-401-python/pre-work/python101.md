@@ -115,7 +115,7 @@ y = 7
 #They can also have their own line
 ```
 
-**Docstrings** are created under the first line of a function definition. They are returned throughout runtime and can be inspected at runtime. A docstring can include mulitple lines of text and is enclosed by `"""` before and after the text:
+**Docstrings** are created under the first line of a function definition. They are retained throughout runtime and can be inspected at runtime. A docstring can include multiple lines of text and is enclosed by `"""` before and after the text:
 
 ```python
 def shout(word):
@@ -130,3 +130,44 @@ shout("hello")
 
 ### **Functions as Objects**
 
+After definition, functions behave similarly to any other value. They can be assigned and reassigned to variables.
+
+Functions can also be used as arguments in other functions. When used as an argument, functions do not need to include their parentheses.
+
+```python
+def square(x):
+  return x * x
+#accepts func as argument and prints result of executing on x
+def test(func, x):
+  print(func(x))
+#execute.
+test(square, 42)
+#prints 1764
+```
+
+### **Modules**
+
+Modules are pieces of code that have already been written to fulfill common tasks. They are accessed using the `import` keyword, with module variables and functions accessed using `module_name.var` notation.
+
+```python
+#imports math module, with all included variables and functions
+import math
+
+#only imports specified values from math module, separated by a comma (,)
+from math import pi, sqrt
+
+#imports from module and assigns new name
+from math import sqrt as square_root
+```
+
+**NOTE:** Trying to import an unavailable module will result in an ImportError.
+
+### **The Standard Library & pip**
+
+There are 3 types of modules in Python: those you write yourself, those you install from external sources, and those that are preinstalled with Python.
+
+Preinstalled libraries are known as the **standard library**.
+
+Many third-party Python modules are stored in the **Python Package Index (PyPI)**. Third party libraries can be installed with a program called **pip**. Example: `pip installed library_name`
+
+## **Exceptions & Files**
