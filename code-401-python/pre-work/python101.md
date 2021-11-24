@@ -168,6 +168,115 @@ There are 3 types of modules in Python: those you write yourself, those you inst
 
 Preinstalled libraries are known as the **standard library**.
 
-Many third-party Python modules are stored in the **Python Package Index (PyPI)**. Third party libraries can be installed with a program called **pip**. Example: `pip installed library_name`
+Many third-party Python modules are stored in the **Python Package Index (PyPI)**. Third party libraries can be installed with a program called **pip**. Example: `pip install library_name`
 
 ## **Exceptions & Files**
+
+### **Exceptions**
+
+Exceptions occur when something goes wrong in code, such as incorrect code or input. When this happens, then program immediately stops.
+
+Some common exceptions are:
+
+* ImportError: an import fails
+* IndexError: a list is indexed with an out-of-range number
+* NameError: an unknown variable is used
+* SyntaxError: the code can't be parsed properly
+* TypeError: a function is called on a value of an inappropriate type
+* ValueError: a function is called on a value of the correct type but with an inappropriate value.
+
+**NOTE:** Third-party libraries often define their own exceptions. Read the docs!
+
+### **Exception Handling**
+
+Exceptions in Python are handled using `try/except` statements. Code in the `try` block attempts to execute. If an exception is encountered, execution stops and code in the `except` block is run.
+
+```python
+# From sololearn.com:
+try:
+  num1 = 7
+  num2 = 0
+  print(num1 / num2)
+  print("Done calculation")
+except ZeroDivisionError:
+  print("An error ocurred")
+  print("due to zero division")
+```
+
+A single `try` statement an be followed by multiple different `except` statements for handling different exceptions.
+
+An `except` statement without any exception specified will *catch all errors.*
+
+### **finally**
+
+`finally:` can be placed at the end of a `try/except` block to specify code that will run no matter what.
+
+Code in a `finally` code block runs even if an uncaught exception occurs in the preceding blocks (including exceptions in the `except` block).
+
+### **Raising Exceptions**
+
+`raise` can be used to manually throw an exception. You must specify a **type** when raising an exception.
+
+Arguments can be included in raised errors to provide more detail:
+
+```python
+# From sololearn.com
+name = "123"
+raise NameError("Invalid name!")
+```
+
+Inside of an `except` block, `raise` can be used to raise whatever exception occurred.
+
+### **Assertions**
+
+The `assert` keyword can be used to perform a sanity-check in code. `assert` will test a given condition and throw an exception if it evaluates false.
+
+```python
+# From sololearn.com
+print(1)
+assert 2 + 2 == 4
+print(2)
+assert 1 + 1 == 3
+#Exception will be thrown and execution will stop
+print(3)
+```
+
+`assert` can take a second argument, passed to the error raised if the assertion fails.
+
+`assert (temp >= 0), "Colder than absolute zero!"`
+
+### **Opening Files**
+
+Python can read and write file contents. Before editing, a file must be opened using the `open` function, the argument of which is the file path:
+
+```python
+my_file = open("filename.txt")
+```
+
+A second argument can be used to specify the *mode* used to open a file:
+
+* `"r"` - read mode (default)
+* `"w"` - write mode, for rewriting contents
+* `"a"` - append mode, for adding new content
+* `"b"` - can be added to open in **binary** mode, which is used for non-text files.
+
+When done with a file, you should close it. this is done using `close()`:
+
+```python
+# closes file from previous example
+my_file.close()
+```
+
+### **Reading Files**
+
+A file opened in text mode can be read using `.read()`
+
+A number can be provided as an argument specify how many bytes of a file to read. Negative values will return the entire contents.
+
+After all contents are read, further reading will return an empty string.
+
+The `.readlines()` method can be used to return a list of individual lines in a file.
+
+`for` can also be used to iterate through lines of an opened file.
+
+### **Writing Files**
