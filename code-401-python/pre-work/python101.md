@@ -256,7 +256,7 @@ my_file = open("filename.txt")
 A second argument can be used to specify the *mode* used to open a file:
 
 * `"r"` - read mode (default)
-* `"w"` - write mode, for rewriting contents
+* `"w"` - write mode, for rewriting contents. Creates new file if it doesn't exist.
 * `"a"` - append mode, for adding new content
 * `"b"` - can be added to open in **binary** mode, which is used for non-text files.
 
@@ -280,3 +280,31 @@ The `.readlines()` method can be used to return a list of individual lines in a 
 `for` can also be used to iterate through lines of an opened file.
 
 ### **Writing Files**
+
+Files can be written to using the `.write()` method.
+
+**CAUTION:** When opening a file in write mode, the file's existing content is deleted.
+
+the `.write()` method returns the number of bytes written to a file, if successful.
+
+### **Working with Files**
+
+Best practice dictates that files should always be closed after work is done. A good way to ensure this is the use of `try/finally`:
+
+```python
+#From sololearn.com
+try:
+  f=open("file.txt")
+  print(f.read())
+finally:
+  f.close()
+```
+
+Another way to accomplish this is by using `with` statements. This allows for the creation of a temporary variable, only accessible inside the following code block. **The file is automatically closed at the end of the statement.**
+
+```python
+# file is opened as f
+with open("filename.txt") as f:
+  print(f.read())
+# f is closed automatically at end of block
+```
