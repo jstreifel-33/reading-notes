@@ -308,3 +308,105 @@ with open("filename.txt") as f:
   print(f.read())
 # f is closed automatically at end of block
 ```
+
+## **More Types**
+
+### **None**
+
+`None` is used to represent the absence of a value, similarly to `null` in other languages:
+
+* Evaluates as False when used as a boolean
+* Represented by an empty string in the Python console
+* Any function without an explicit return returns `None`
+
+### **Dictionaries**
+
+Dictionaries are data structures that map keys to values. Can be indexed similarly to lists, using square brackets.
+
+```python
+# Think objects from JS!
+samus = {
+  "varia_suit": True,
+  "arm_cannon": True,
+}
+print(samus["varia_suit"])
+```
+
+Trying to index a key that doesn't exist will return a **KeyError**.
+
+Dictionary keys must be **immutable**. Using a mutable value as a key will cause a TypeError.
+
+### **Dictionary Functions**
+
+Dictionary keys can be assigned values. New keys can also be assigned values.
+
+```Python
+samus["varia_suit"] = False
+samus["gravity_suit"] = True
+```
+
+`in` and `not in` can be used to determine the presence of a key in a dictionary.
+
+```Python
+print("gravity_suit" in samus)
+# True
+
+print("missile" in samus)
+# False
+
+print("missile" not in samus)
+# True
+```
+
+`get` behaves similarly to indexing, but can return another specified value is the key provided doesn't exist: `samus.get("morph_ball", "upgrade not found")`
+
+### **Tuples**
+
+Tuples are like lists, but they are immutable. A tuple is enclosed in parentheses ().
+
+```Python
+planets = ("ZDR", "SR388", "Zebes", "Phaaze", "Tallon IV", "K-2L", "Dark Aether", "Elysia")
+```
+
+Tuple values are still indexed by number, but trying to reassign an index value will cause a TypeError.
+
+**NOTE:** A tuple can also be created without parentheses by simply separating values with commas.
+
+```Python
+#Also a valid tuple assignment
+planets = "ZDR", "SR388", "Zebes", "Phaaze", "Tallon IV", "K-2L", "Dark Aether", "Elysia"
+```
+
+### **List Slices**
+
+List slices are a more advanced way of retrieving values from a list. Similarly to `range` the second index number in a slice is not included in the result.
+
+List slices return a new list containing the index values specified.
+
+```Python
+hunters = ["Samus", "Noxus", "Spire", "Kanden", "Sylux", "Trace", "Weavel"]
+print(hunters[2:5])
+#['Spire', 'Kanden', 'Sylux']
+```
+
+Omitting the first or second number in a slice is taken to be the start or end of the list, respectively.
+
+```Python
+print(hunters[:5])
+#['Samus', 'Noxus', 'Spire', 'Kanden', 'Sylux']
+print(hunters[2:])
+#['Spire', 'Kanden', 'Sylux', 'Trace', 'Weavel']
+```
+
+Similarly to `range`, a third number can be included in slices to specify step size.
+
+```Python
+print(hunters[1:6:2])
+#['Noxus', 'Kanden', 'Trace']
+print(hunters[::3])
+#['Samus', 'Kanden', 'Weavel']
+```
+
+Negative values can be used to count from the end of a list instead of the beginning. They can also be used for step value to perform a slice backwards.
+
+**NOTE:** `list[::-1]` is a common and simple way to reverse a list.
