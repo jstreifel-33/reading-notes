@@ -417,7 +417,7 @@ List comprehensions are a way to quickly create lists with specific rules.
 
 ```Python
 squares = [i**2 for i in range(4)]
-print(cubes)
+print(squares)
 #[0, 1, 4, 9]
 ```
 
@@ -491,4 +491,159 @@ for char in "abcdefghijklmnopqrstuvwxyz":
   print("{0} - {1}%".format(char,round(perc,2)))
 ```
 
-Idk, pretty cool guess. Prints percentage of character that each letter takes up in a file.
+Idk, pretty cool guess. Prints percentage of characters that each letter takes up in a file.
+
+## **Functional Programming**
+
+### **Intro to Functional Programming**
+
+Functional programming is programming based around functions.
+
+**Higher-order functions** are functions that accept other functions as arguments.
+
+**Pure Functions** are functions with no side effects. Their output is entirely depending on provided arguments, and will always be the same given the same values as arguments.
+
+Memoization is possible with pure functions, and involves storing the results of a certain input for recall later, instead of executing a function multiple times for the same input.
+
+### **Lambdas**
+
+`lambda` syntax is Python's way of creating anonymous functions. It consists of `lambda arg: function`
+
+```Python
+# From sololearn
+def my_fun(f, arg):
+  return f(arg)
+
+my_fun(lambda x: 2*x*x, 5)
+```
+
+Lambda functions can only do things that require a single expression. (*no code blocks like in JS*)
+
+Lambda functions can also be assigned to variables and used like normal functions. As a general rule, it's better to use `def` in cases where a function will be assigned.
+
+### **map & filter**
+
+`map(f, iterable)` accepts a function and iterable as arguments, and returns a new iterable with the function applied to each argument.
+
+A lambda can be used in place of the function argument, if desired.
+
+`filter(f, iterable)` removes items that don't evaluate true in a given function.
+
+**NOTE:** Both `map` and `filter` must be explicitly converted to a list if printing is desired, by wrapping in `list()`
+
+### **Generators**
+
+Generators are a type of iterable. They don't allow for arbitrary indices, but can be iterated through with `for` loops.
+
+Generators are created using functions and the `yield` statement. `yield` is what defines a generator.
+
+```Python
+# from sololearn
+def countdown():
+  i = 5
+  while i > 0:
+    yield i
+    i -=1
+
+for i in countdown():
+  print(i)
+```
+
+Since generators only yield one item at a time, they don't have a memory restriction, and can be **infinite**.
+
+Finite generators can be converted to lists by using the `list()` function.
+
+Generators also result in improved performance, on account of lower memory usage.
+
+### **Decorators**
+
+Decorators are a way of modifying functions using other functions.
+
+```Python
+# From sololearn
+def decor(func):
+  def wrap():
+    print("=====")
+    func()
+    print("=====")
+  return wrap
+
+def print_text():
+  print("Hello world!")
+
+decorated = decor(print_text)
+# Executes wrap() with print_text() inside!
+decorated()
+```
+
+Wow. A variable containing a function can be reassigned with a wrapped version, and Python allows for wrapping a function at definition using `@`:
+
+```Python
+#From Sololearn
+
+def print_text():
+  print("Hello world!")
+print_text = decor(print_text)
+#the below and above lines accomplish the same task.
+#print_text will be wrapped in decor when invoked.
+@decor
+def print_text():
+  print("Hello world!")
+```
+
+### **Recursion**
+
+Recursion at the most fundamental level involves a function calling itself. A classic example is the **facorial** function:
+
+```Python
+def facotrial(x):
+  if x == 1:
+    return 1
+  else:
+    return x * factorial(x-1)
+```
+
+In this example 1! = 1 and is known as our **base case**, or the condition that breaks out of the recursion and doesn't involve further function calls.
+
+Recursive functions can be infinite. This often happens when a base case if forgotten or incorrect. Infinitely recursive functions will result in a `RuntimeError`.
+
+Recursion can also be indirect, in cases where one one function calls a second, which then calls the first, and so on.
+
+```Python
+# Fibonacci sequence using recursion
+# (from sololearn):
+def fib(x):
+  if x == 0 or x == 1:
+    return 1
+  else: 
+    return fib(x-1) + fib(x-2)
+```
+
+### **Sets**
+
+Sets are similar to lists and dictionaries. They are created using `{values...}` or `set()`. To create an empty set, `set()` must be used, as `{}` will create an empty dict.
+
+* Sets share certain operations with lists, such as `in` and `len`
+* Sets are unordered, and cannot be indexed
+* **Cannot** contain duplicate elements
+* Instead of `.append()`, use `.add()`
+* `.remove()` removes a specific element
+* `.pop()` removes an arbitrary element
+
+Mathematical operators can be used to combine sets:
+
+* `|` union - combines two sets to form a new one with the items in either
+* `&` intersection - gets items only in both
+* `-` difference - gets items in the first set but not the second
+* `^` symmetric difference - gets items in either set, but not both
+
+### **itertools**
+
+itertools is a standard library containing useful functions for functional programming:
+
+* `count(num)` - counts up infinitely from a value (iterable)
+* `cycle(iterable)` - infinitely iterates through an iterable
+* `repeat` - repeats an object, either inifinitely or a specific number of times
+* `takewhile` - takes items from an iterable while a predicate function remains true
+* `chain` - conbines several iterables into one
+* `accumulate` - returns a running total of values in an iterable
