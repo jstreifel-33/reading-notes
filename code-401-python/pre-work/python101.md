@@ -389,7 +389,7 @@ print(hunters[2:5])
 #['Spire', 'Kanden', 'Sylux']
 ```
 
-Omitting the first or second number in a slice is taken to be the start or end of the list, respectively.
+Omitting the first or second number in a slice is taken to specify the start or end of the list, respectively.
 
 ```Python
 print(hunters[:5])
@@ -410,3 +410,85 @@ print(hunters[::3])
 Negative values can be used to count from the end of a list instead of the beginning. They can also be used for step value to perform a slice backwards.
 
 **NOTE:** `list[::-1]` is a common and simple way to reverse a list.
+
+### **List Comprehensions**
+
+List comprehensions are a way to quickly create lists with specific rules.
+
+```Python
+squares = [i**2 for i in range(4)]
+print(cubes)
+#[0, 1, 4, 9]
+```
+
+List comprehensions can also include `if` statements:
+
+```Python
+evens = [i**2 for i in range(10) if i**2 % 2 == 0]
+print(evens)
+# [0, 4, 16, 36, 64]
+```
+
+Trying to create a very large or extensive list will result in a **MemoryError**. This is solved with *generators*, which will be covered later.
+
+### **String Formatting**
+
+String formatting is used to substitute values into a string, instead of converting and adding values as done in previous examples.
+
+```Python
+nums = [3, 4, 5]
+string = "Numbers: {0} {1} {2}".format(nums[0], nums[1], nums[2])
+print(string)
+# 'Numbers: 3 4 5'
+```
+
+In the above example, each argument of `.format()` corresponds to a number in curly braces of the preceding string.
+
+String formatting can also be done with named arguments.
+
+```Python
+msg = 'My name is {name} and I am {age} years old'
+print(msg.format(name='Bob', age=27))
+# 'My name is Bob and I am 27 years old'
+```
+
+### **Useful Functions**
+
+* String Functions
+  * `str.join(list)` - joins a list of strings with another string as a separator
+  * `str.replace(orig, new)` - replaces on substring inside a string with another
+  * `str.startswith(substr)`/`str.endswith(substr)` - determine if there is a substring at the start or end of a string (True/False)
+  * `str.lower()`/`str.upper()` - change the case of a string
+  * `str.split(separator)` - The opposite of join. Makes a string into a list of strings using a separator.
+* Numeric Functions
+  * `max`/`min` - find the maximum or minimum value in some numbers or a list.
+  * `abs` - find the distance from zero of a number (absolute value)
+  * `round` - round an number to a certain number of decimal places
+  * `sum` - find the total of a list.
+* List Functions
+  * `all`/`any` - take a list as an argument and return True if all or any arguments evaluate to True
+  * `enumerate` - iterates through values and indices simultaneously, as tuples.
+
+### **Text Analyzer**
+
+Example project from sololearn:
+
+```Python
+# From sololearn.com
+def count_char(text, char):
+  count = 0
+  for c in text:
+    if c == char:
+      count += 1
+  return count
+
+filename = input('Enter a filename: ')
+with open(filename) as f:
+  text = f.read()
+
+for char in "abcdefghijklmnopqrstuvwxyz":
+  perc = 100 * count_char(text, char) / len(text)
+  print("{0} - {1}%".format(char,round(perc,2)))
+```
+
+Idk, pretty cool guess. Prints percentage of character that each letter takes up in a file.
