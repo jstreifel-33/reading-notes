@@ -643,7 +643,344 @@ itertools is a standard library containing useful functions for functional progr
 
 * `count(num)` - counts up infinitely from a value (iterable)
 * `cycle(iterable)` - infinitely iterates through an iterable
-* `repeat` - repeats an object, either inifinitely or a specific number of times
+* `repeat` - repeats an object, either infinitely or a specific number of times
 * `takewhile` - takes items from an iterable while a predicate function remains true
-* `chain` - conbines several iterables into one
+* `chain` - combines several iterables into one
 * `accumulate` - returns a running total of values in an iterable
+
+## **Object Oriented Programming**
+
+### **Classes**
+
+In python, objects are created using **classes**.
+
+A class describes what an object will be, but is separate from the object itself. It is essentially a blueprint used to create an object.
+
+```Python
+class Cat:
+  def __init__(self, color, legs):
+    self.color = color
+    self.legs = legs
+
+felix = Cat("ginger", 4)
+stumpy = Cat("brown", 3)
+```
+
+`__init__` is called when an instance of a class is created, and is the most important method in a class.
+
+All methods must have `self` as their first parameter. When calling a method you don't need to include `self` in the arguments as Python does it automatically.
+
+instances of classes have attributes which can be accessed using **dot notation**. In `__init__` we can use `self.attribute` to assign values to attributes.
+
+**Methods** can be added within a class using `def` like other functions. The methods can then be accessed using dot notation like attributes.
+
+```Python
+class Cat:
+  def __init__(self, color, legs):
+    self.color = color
+    self.legs = legs
+
+  def meow(self):
+    print("meow!")
+
+felix = Cat("ginger", 4)
+felix.meow()
+# meow!
+```
+
+**Class attributes** can be defined by assigning a variable inside a class. They can then be accessed from an instance or the class itself.
+
+Trying to access an attribute that doesn't exist will result in an `AttributeError`
+
+### **Inheritance**
+
+Inheritance allows for sharing of functionality between classes. Classes used for shared class functionality are referred to as *superclasses*.
+
+Inheriting classes are called *subclasses*. A subclasses methods or attributes will override those of the superclass if they share the same name.
+
+`class Name(Superclass)` is used to assign superclasses to classes, as seen below:
+
+```Python
+#from sololearn
+class Animal:
+  def __init__(self, name, color):
+    self.name = name
+    self.color = color
+
+class Cat(Animal):
+  def purr(self):
+    print("Purr...")
+
+class Dog(Animal):
+  def bark(self):
+    print("Woof!")
+
+fido = Dog("Fido", "brown")
+print(fido.color)
+fido.bark()
+
+#fido inherited attributes from the Animal superclass!
+```
+
+Inheritance can be chained, which is called *indirect inheritance*.
+
+`super` refers to the parent class and can be used to invoke methods from a superclass.
+
+### **Magic Methods & Operator Overloading**
+
+Magic methods are special methods surrounded with double underscores, like `__init__`. They are also known as **dunders**.
+
+One use of dunders is **operator overloading** which defines operators for customer classes.
+
+```Python
+# from sololearn
+class Vector2D:
+  def __init__(self, x, y):
+    self.x = x
+    self.y = y
+  def __add__(self, other):
+    return Vector2D(self.x + other.x, self.y + other.y)
+
+first = Vector2D(5, 7)
+second = Vector2D(3, 9)
+#__add__ redefines the + operator
+result = first + second
+print(result.x)
+print(result.y)
+```
+
+Other **operator** magic methods are:
+
+* `__sub__` for `-`
+* `__mul__` for `*`
+* `__truediv__` for `/`
+* `__floordiv__` for `//`
+* `__mod__` for `%`
+* `__pow__` for `**`
+* `__and__` for `&`
+* `__xor__` for `^`
+* `__or__` for `|`
+
+`x + y` is translated to `x.__add__(y)`.
+
+If `__add__` isn't implemented on x yet, the equivalent `r` method is called: `y.__radd__(x)`
+
+Python also has **comparison magic methods**:
+
+* `__lt__` for `<`
+* `__le__` for `<=`
+* `__eq__` for `==`
+* `__ne__` for `!=`
+* `__gt__` for `>`
+* `__ge__` for `<=`
+
+If `__ne__` is not implemented, it returns it's opposite of `__eq__`. there are no other relationships for comparison operators.
+
+### **Object Lifecycle**
+
+The object lifecycle goes `creation > manipulation > destruction`.
+
+The first stage is the **definition** of a class, followed by **instantiation** when `__init__` is called.
+
+`__new__` is called and memory is allocated for storing the instance.
+
+An object is **destroyed** when it's reference count reaches zero. Upon destruction, allocated memory is freed up.
+
+`del` is used to reduce the reference count of an object by one, often leading to deletion. `del` relates to the `__del__` magic method.
+
+### **Data Hiding**
+
+*Encapsulation* involves packaging related variables and functions into an instance of a class.
+
+*Data Hiding* is a related concept, which states that implementation details of a class should be hidden.
+
+Python's philosophy is "we are all consenting adults here", meaning private methods aren't restricted.
+
+**Weakly private** methods and attributes are preceded by a **single underscore**. This is mostly a convention, and the only effect will be that `from module_name import *` won't import private variables.
+
+**Strongly private** methods and attributes are preceded by a **double underscore**. 
+
+Strongly private variabels have their name mangled, essentially including the class name. They can still be accessed by using `_Class__privatemethod`.
+
+### **Class & Static Methods**
+
+Class methods are called by a class and passed to the `cls` parameter fo a method.
+
+Class methods are marked with a `@classmethod` decorator:
+
+```Python
+#From sololearn:
+class Rectangle:
+  def __init__(self, width, height):
+    self.width = width
+    self.height = height
+  def calculate_area(self):
+    return self.width * self.height
+  @classmethod
+  def new_square(cls, side_length):
+    return cls(side_length, side_length)
+  
+square = Rectangle.new_square(5)
+print(square.calculate_area()) 
+```
+
+A common use of class methods is as factory methods. They can instantiate an instance of a class with different parameters.
+
+Static methods are similar, but don't receive additional arguments. They don't receive any additional arguments. They are identical to normal functions that belong to a class.
+
+Static methods are marked with a `@staticmethod` decorator:
+
+```Python
+#from sololearn
+class Pizza:
+  def __init__(self, toppings):
+    self.toppings = toppings
+
+  @staticmethod
+  def validate_topping(topping):
+    if topping == "pineapple":
+      raise ValueError("No pineapples!")
+    else:
+      return True
+  
+ingredients = ["cheese", "onions", "spam"]
+if all(Pizza.validate_topping(i) for i in ingredients):
+  pizza = Pizza(ingredients)
+```
+
+For reference:
+
+* `self` - regular methods
+* `cls` - classmethods
+* Just args - staticmethods
+
+### **Properties**
+
+Properties provide a way fo customizing access to instance attributes.
+
+They are created using the `@property` decorator. When accessed, a method marked in this way executes instead. This can be used to make a property read-only.
+
+```Python
+class Pizza:
+  def __init__(self, toppings):
+    self.toppings = toppings
+
+  @property
+  def pineapple_allowed(self):
+    return False
+
+pizza = Pizza(["cheese", "tomato"])
+print(pizza.pineapple_allowed)
+#Trying to assign will cause an AttributeError
+pizza.pineapple_allowed = True
+```
+
+Properties can be set with **setter/getter** functions. As the name implies, setters set a properties value, and getters get the value.
+
+To define a setter or getter, use a decorator of `@property.setter` or `@property.getter`.
+
+### **A Simple Game**
+
+Object-orientation is useful for managing different objects, such as in a game. Below is example code from sololearn of a simple game.
+
+```Python
+#from sololearn:
+def get_input():
+  command = input(": ").split()
+  verb_word = command[0]
+  if verb_word in verb_dict:
+    verb = verb_dict[verb_word]
+  else:
+    print("Unknown verb {}".format(verb_word))
+    return
+
+  if len(command) >= 2:
+    noun_word = command[1]
+    print (verb(noun_word))
+  else:
+    print(verb("nothing"))
+
+def say(noun):
+  return 'You said "{}"'.format(noun)
+
+verb_dict = {
+  "say": say,
+}
+
+while True:
+  get_input()
+```
+
+```Python
+#from sololearn:
+class GameObject:
+  class_name = ""
+  desc = ""
+  objects = {}
+
+  def __init__(self, name):
+    self.name = name
+    GameObject.objects[self.class_name] = self
+
+  def get_desc(self):
+    return self.class_name + "\n" + self.desc
+
+class Goblin(GameObject):
+  class_name = "goblin"
+  desc = "A foul creature"
+
+goblin = Goblin("Gobbly")
+
+def examine(noun):
+  if noun in GameObject.objects:
+    return GameObject.objects[noun].get_desc()
+  else:
+    return "There is no {} here.".format(noun)
+
+verb_dict = {
+  "say": say,
+  "examine": examine,
+}
+```
+
+```Python
+class Goblin(GameObject):
+  def __init__(self, name):
+    self.class_name = "goblin"
+    self.health = 3
+    self._desc = "A foul creature"
+    super().__init__(name)
+
+  @property
+  def desc(self):
+    if self.health >= 3:
+      return self._desc
+    elif self.health == 2:
+      health_line = "It has a wound on its knee."
+    elif self.health == 1:
+      health_line = "Its left arm has been cut off!"
+    elif self.health <= 0:
+      health_line = "It is dead."
+    return self._desc + "\n" + health_line
+
+  @desc.setter
+  def desc(self, value):
+    self._desc = value
+
+def hit(noun):
+  if noun in GameObject.objects:
+    thing = GameObject.objects[noun]
+    if type(thing) == Goblin:
+      thing.health = thing.health - 1
+      if thing.health <= 0:
+        msg = "You killed the goblin!
+      else:
+        msg = "You hit the {}".format(thing.class_name)
+  else:
+    msg = "There is no {} here.".format(noun)
+  return msg
+```
+
+Neat!
+
+## **Regular Expressions**
