@@ -984,3 +984,269 @@ def hit(noun):
 Neat!
 
 ## **Regular Expressions**
+
+### **Reg Ex**
+
+Regular expressions are a domain specific language (DSL) that can be used for two main purposes:
+
+* Verifying that strings match a pattern
+* Performing substitutions in a string
+
+Regular expressions are accessed in Python using the `re` module from the standard library.
+
+`re.match` can be used to find a match at the beginning of a string.
+
+```Python
+import re
+
+pattern = r"spam"
+
+if re.match(pattern, "spamspamspam"):
+  print ("Match")
+else:
+  print("No match")
+```
+
+The convention of r"expression" uses a raw string as the regex pattern, which is generally easy to work with. More complex regex patterns can be build, as we'll see later.
+
+Other Python `re` methods include:
+
+* `re.search` - finds a match of a pattern anywhere in a string
+  * `.group()` - returns the string matched with search
+  * `.start()`/`.end()` - return the respective start and end positions of the first match
+  * `.span()` - returns the start and end positions of first match as a tuple
+* `re.findall` - returns a list of all substrings matching a pattern
+* `re.sub(pattern, repl, string, count=0)` - replaces all occurrences of `pattern` in a `string` with `repl`, unless `count` is provided, in which case it replaces `count` occurrences. Returns modified string.
+
+### **Simple Metacharacters**
+
+Metacharacters allow for more advanced matching. Characters like `$` or other special regex characters will have to be escaped with `\$` in order to be matched.
+
+* `.` - matches any character, other than new line.
+* `^` - start of string
+* `$` - end of string
+
+### **Character Classes**
+
+Character classes match only one of a specific set of characters. They are created with square brackets `[]`
+
+They can also be used for ranges of characters: `[a-z]`, `[0-9]`, `[A-Z]`
+
+`^` when used in a character class inverts it. This matches any character not inside the class.
+
+### **More Metacharacters**
+
+There are metacharacters for specifying numbers of repetitions for a match:
+
+* `*` - match *zero or more* repetitions of the previous thing
+* `+` - match *one or more* repetitions
+* `?` - match *zero or one* repetitions
+* `{low, high}` -  represents number of repetitions to match between a low and high number.
+
+### **Groups**
+
+A group is made using parentheses `()`, which can be passed to a metacharacter.
+
+Groups in a match can be accessed using `group()`, `group(n)` where `n` is a number > 0, or `groups()`.
+
+There are special groups:
+
+* `(?P<name>...)` will create a *named group* where `name` is the name and `...` is the content to match.
+* `(?:...)` will create a *non-capturing group* which is not accessible by the `group()` methods.
+* `(...|...)` can create an `or` between two expressions `...`
+
+### **Special Sequences**
+
+* `\1` to `\99` - matches the group of that number
+* `\d` & `\D` - digits and NOT digits
+* `\w` & `\W` - word characters and NOT word characters
+* `\s` & `\S` - whitespace and NOT whitespace
+* `\A` & `\Z` - beginning and end of string
+* `\b` - boundary between words
+* `\B` - empty string anywhere else
+
+## **Pythonicness & Packaging**
+
+### **The Zen of Python**
+
+The Zen of Python is a tongue-in-cheek set of principles for programming in Python.
+
+```Python
+# to access the Zen of Python:
+import this
+```
+
+```Python
+# The Zen of Python, by Tim Peters
+
+# Beautiful is better than ugly.
+# Explicit is better than implicit.
+# Simple is better than complex.
+# Complex is better than complicated.
+# Flat is better than nested.
+# Sparse is better than dense.
+# Readability counts.
+# Special cases aren't special enough to break the rules.
+# Although practicality beats purity.
+# Errors should never pass silently.
+# Unless explicitly silenced.
+# In the face of ambiguity, refuse the temptation to guess.
+# There should be one-- and preferably only one --obvious way to do it.
+# Although that way may not be obvious at first unless you're Dutch.
+# Now is better than never.
+# Although never is often better than *right* now.
+# If the implementation is hard to explain, it's a bad idea.
+# If the implementation is easy to explain, it may be a good idea.
+# Namespaces are one honking great idea -- let's do more of those
+```
+
+### **PEP**
+
+Python Enhancement Proposals are suggestions for improvements to the language.
+
+**PEP 8** is a style guide for writing readable code. Summarized, it says:
+
+* modules should have short, all-lowercase names
+* class names should be in the CapWords style
+* most variables and function names should be lowercase_with_underscores
+* constants should be CAPS_WITH_UNDERSCORES
+* names that would clash with Python keywords should have a trailing underscore_
+* operators should be surrounded with spaces, commas should be trailed by spaces
+* lines shouldn't be longer than 80 chars
+* `from module import *` should be avoided
+* there should only be one statment per line
+
+### **More on Function Arguments**
+
+Python allows for varying numbers of arguments using `*args` at the end of function argument upon definition.
+
+These arguments that fall within `*args` are accessed through the tuple `args` inside the function.
+
+Named values can be made optional by assigning a default value:
+
+```Python
+def function (x, y, food="spam"):
+  print(food)
+
+function(1, 2)
+#prints spam
+function(1, 2, "eggs")
+#prints eggs
+```
+
+`**kwargs` can be used to handle names arguments that are not defined in advance. `kwargs` will return a dictionary.
+
+### **Tuple Unpacking**
+
+Tuple unpacking assigns each item in an iterable to a variable:
+
+```Python
+numbers = (1, 2, 3)
+a, b, c = numbers
+
+#This can be used for quick variable swapping as well:
+a, b = b, a
+```
+
+A variable with `*` can be used to catch leftover values when unpacking:
+
+```Python
+a, b, *c, d = [1, 2, 3, 4, 5, 6, 7, 8]
+
+print(a)
+print(b)
+print(c)
+print(d)
+# 1
+# 2
+# [3, 4, 5, 6, 7]
+# 8
+```
+
+### **Ternary Operator**
+
+Conditional expressions provide `if...else` functionality with less code.
+
+```Python
+a = 7
+b = 1 if a >= 5 else 42
+print(b)
+# 1
+```
+
+*Ternary* refers to the fact that 3 arguments are used in the expression.
+
+### **More on else Statements**
+
+`else` can be used after `for` and `while`, giving it a different meaning. In these cases, code inside of `else` will run if the loop finishes normally, and without a `break`.
+
+`else` can also be used with `try/except` statements. In these cases, code will execute in the case of no errors within the `try` block.
+
+### **__main__**
+
+Python code is often either a module to be imported or a script to do a thing. It is possible to write code that can do both!
+
+To accomplish this, place script code inside `if __name__ == "__main__":`. Code inside this statement will not be executed on import.
+
+```Python
+def function():
+  print("this ia a module function!")
+
+if __name__=="__main__":
+  print("this is a script!")
+```
+
+This works because of the Python interpretter's behavior. If a file is being executed as the main program, Python assigns the name `"__main__"` to it. When importing a file, however, `__name__` will be assigned the module's given name.
+
+### **Major 3rd-Party Libraries**
+
+There are lots of useful tools in the standard library, but there are also great third party tools:
+
+* Django - the most frequently used web framework
+* CherryPy & Flask - other popular web frameworks
+* BeautifulSoap - very useful library for scraping data from websites
+* matplotlib - create graphs based on data in Python
+* NumPy - faster multidimensional arrays and matrix transformations
+* SciPy - extends the functionality of NumPy
+* Panda3D & pygame - make games in Python
+
+### **Packages**
+
+Packaging refers to placing modules you've written into a standard format for others to easily use. This will involve the use of the `setuptools` and `distutils` modules.
+
+The first step to packaging is organizing files correctly:
+
+```
+SoloLearn/
+  LICENSE.txt
+  README.txt
+  setup.py
+  sololearn/
+    __init__.py
+    sololearn.py
+    sololearn2.py
+```
+
+The directory containing your modules must include `__init__.py` which can be blank. 
+
+`setup.py` is also an important file, and contains information for assembling your package:
+
+```Python
+from distutils.core import setup
+
+setup(
+  name="SoloLearn",
+  version = "0.1dev",
+  packages=['sololearn',],
+  license = 'MIT',
+  long_description=open('README.txt').read(),
+)
+```
+
+### **Packaging for Users**
+
+Sometimes users will not have Python installed, in which case you should package programs as executables. There are tools to help us do this!
+
+For Windows: py2exe, PyInstaller, and cx_Freeze can be used to create executables.
+
+For Mac: py2app, PyInstaller, or cx_Freeze will get the job done.
