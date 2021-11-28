@@ -62,4 +62,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 
 ## Code 401 - Python Advanced Software Development
 
-01 [TBD](./readme.md)
+01. [TBD](./readme.md)
