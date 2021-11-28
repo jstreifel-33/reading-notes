@@ -62,4 +62,11 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 
 ## Code 401 - Python Advanced Software Development
 
-01. [TBD](./readme.md)
+### Pre-work
+
+01. [Python 101 - Sololearn Course Notes](code-401-python/pre-work/python101.md)
+02. [Growth Mindset](code-401-python/pre-work/growth-mindset.md)
+
+### Course Notes
+
+01. [Pain, Suffering, and Big O](code-401-python/class-01.md)
