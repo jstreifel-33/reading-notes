@@ -1,5 +1,7 @@
 # **How to Python**
 
+[View on GitHub (includes Nav)](https://github.com/jstreifel-33/reading-notes/blob/gh-pages/code-401-python/pre-work/python101.md)
+
 ## **Basic Concepts**
 
 ## **Strings & Variables**
