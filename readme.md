@@ -70,3 +70,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 ### Course Notes
 
 01. [Pain, Suffering, and Big O](code-401-python/class-01.md)
+02. [Testing, Modules, and Recursion](code-401-python/class-02.md)
