@@ -109,7 +109,7 @@ Other recursive data types include sets, trees, and dictionaries.
 
 Recursive functions can often have their structure informed by the data type that they accept as input!
 
-# Naive Recursion and Caching results
+### Naive Recursion and Caching results
 
 Following recursion execution can sometimes reveal that recursive functions are severely inefficient. This is true of the classic Fibonacci recursive function:
 
