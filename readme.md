@@ -73,3 +73,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 02. [Testing, Modules, and Recursion](code-401-python/class-02.md)
 03. [File IO and Exceptions](code-401-python/class-03.md)
 04. [Classes, Objects, Recursive Thinking, and Pytest](code-401-python/class-04.md)
+05. [Big O & Linked Lists](code-401-python/class-05.md)
