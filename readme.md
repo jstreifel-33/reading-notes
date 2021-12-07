@@ -75,3 +75,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 04. [Classes, Objects, Recursive Thinking, and Pytest](code-401-python/class-04.md)
 05. [Big O & Linked Lists](code-401-python/class-05.md)
 06. [Random Module, Risk Analysis, and Test Coverage](code-401-python/class-06.md)
+07. [Python Scope](code-401-python/class-07.md)
