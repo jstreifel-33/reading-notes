@@ -1,5 +1,7 @@
 # Python Scope
 
+[Source: Real Python - Python Scope & LEGB Rule](https://realpython.com/python-scope-legb-rule/#understanding-scope)
+
 Python is a dynamically-typed language, so variables come into existence when you assign them.
 
 Python scope determines where names are visible within code. Scopes are implemented as dictionaries called **namespaces**, which are stored in the `.__dict__` attribute.
