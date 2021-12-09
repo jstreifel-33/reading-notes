@@ -77,3 +77,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 06. [Random Module, Risk Analysis, and Test Coverage](code-401-python/class-06.md)
 07. [Python Scope](code-401-python/class-07.md)
 08. [List Comprehensions](code-401-python/class-08.md)
+09. [Dunder Methods & Probability](code-401-python/class-09.md)
