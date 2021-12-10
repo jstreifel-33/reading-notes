@@ -78,3 +78,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 07. [Python Scope](code-401-python/class-07.md)
 08. [List Comprehensions](code-401-python/class-08.md)
 09. [Dunder Methods & Probability](code-401-python/class-09.md)
+10. [Stacks & Queues](code-401-python/class-10.md)
