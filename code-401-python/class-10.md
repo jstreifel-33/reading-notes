@@ -1,5 +1,7 @@
 # Stacks and Queues
 
+[Source: Code Fellows - Stacks and Queues](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-10/resources/stacks_and_queues.html)
+
 ## Stacks
 
 A **stack** is a data structure made up of `Nodes` where each node references the next node but not the previous.
