@@ -80,3 +80,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 09. [Dunder Methods & Probability](code-401-python/class-09.md)
 10. [Stacks & Queues](code-401-python/class-10.md)
 11. [Data Analysis Basics](code-401-python/class-11.md)
+12. [Intro to Pandas](code-401-python/class-12.md)
