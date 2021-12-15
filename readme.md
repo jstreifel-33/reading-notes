@@ -12,14 +12,14 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 
 ## Code 102 - Intro to Software Development
 
-01. [The Growth Mindset](/archive/growth_mindset.md)
-02. [Understanding Text Editors and the Terminal](/archive/editors-and-terminals.md)
-03. [Introduction to Git](/archive/git-intro.md)
-04. [Getting Started with HTML](/archive/html-structure.md)
-05. [Intro to CSS](/archive/css-intro.md)
-06. [Intro to JavaScript](/archive/js-intro.md)
-07. [Programming with JavaScript](/archive/js-programming.md)
-08. [JavaScript Loops](/archive/js-loops.md)
+01. [The Growth Mindset](/code-102/growth_mindset.md)
+02. [Understanding Text Editors and the Terminal](/code-102/editors-and-terminals.md)
+03. [Introduction to Git](/code-102/git-intro.md)
+04. [Getting Started with HTML](/code-102/html-structure.md)
+05. [Intro to CSS](/code-102/css-intro.md)
+06. [Intro to JavaScript](/code-102/js-intro.md)
+07. [Programming with JavaScript](/code-102/js-programming.md)
+08. [JavaScript Loops](/code-102/js-loops.md)
 
 ### Reflection Assignments
 
@@ -81,3 +81,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 10. [Stacks & Queues](code-401-python/class-10.md)
 11. [Data Analysis Basics](code-401-python/class-11.md)
 12. [Intro to Pandas](code-401-python/class-12.md)
+13. [Linear Regressions](code-401-python/class-13.md)
