@@ -83,3 +83,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 12. [Intro to Pandas](code-401-python/class-12.md)
 13. [Linear Regressions](code-401-python/class-13.md)
 14. [Data Visualization](code-401-python/class-14.md)
+15. [Trees](code-401-python/class-15.md)
