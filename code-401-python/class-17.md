@@ -75,7 +75,7 @@ Web scraping is a cool tool, but requires making several requests per second. If
 * Use a headless browser
 * Watch out for honeypots (traps)
 * Check if a website is changing layouts to throw off crawlers
-* Don't scrap behind a login
+* Don't scrape behind a login
 * Use captcha solving services
 
 ### How Crawlers Get Spotted
@@ -87,4 +87,4 @@ Web scraping is a cool tool, but requires making several requests per second. If
 
 ### Quick Summary
 
-Do your best not to get banned! Be a good neighbor, but also remember to be sneaky. Just because a site let's Google scrape them doesn't necessarily mean they're inviting any old crawler to do the same.
+Do your best not to get banned! Be a good neighbor, but also remember to be sneaky. Just because a site lets Google scrape them doesn't necessarily mean they're inviting any old crawler to do the same.
