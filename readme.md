@@ -87,3 +87,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 16. [Serverless Functions](code-401-python/class-16.md)
 17. [Web Scraping](code-401-python/class-17.md)
 18. [Cryptography](code-401-python/class-18.md)
+19. [Automation](code-401-python/class-19.md)
