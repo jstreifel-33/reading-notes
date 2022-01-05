@@ -88,3 +88,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 17. [Web Scraping](code-401-python/class-17.md)
 18. [Cryptography](code-401-python/class-18.md)
 19. [Automation](code-401-python/class-19.md)
+20. [Intro to Django](code-401-python/class-20.md)
