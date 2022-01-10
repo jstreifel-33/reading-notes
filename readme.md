@@ -91,3 +91,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 20. [Intro to Django](code-401-python/class-20.md)
 21. [Django Models and Admin](code-401-python/class-21.md)
 22. [Django Forms and CRUD](code-401-python/class-22.md)
+23. [Django Custom User](code-401-python/class-23.md)
