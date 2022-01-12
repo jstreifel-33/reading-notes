@@ -93,3 +93,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 22. [Django Forms and CRUD](code-401-python/class-22.md)
 23. [Django Custom User](code-401-python/class-23.md)
 24. [DSA - Hash Tables](code-401-python/class-24.md)
+25. [Docker and Django REST Framework](code-401-python/class-25.md)
