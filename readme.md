@@ -95,3 +95,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 24. [DSA - Hash Tables](code-401-python/class-24.md)
 25. [Docker and Django REST Framework](code-401-python/class-25.md)
 26. [Permissions & Postgresql](code-401-python/class-26.md)
+27. [Authentication & Production Server](code-401-python/class-27.md)
