@@ -15,11 +15,9 @@ Terms to know:
 
 * **Undirected** - In an undirected graph, each edge is bidirectional. Edges are used to simply connect vertices, rather than direct flow.
 * **Directed (Digraph)** - Every edge is directed. Each node is directed to a next node, with a specific notion of what node is "next."
-
 * **Complete** - A graph where all vertices are connected to every other vertex.
 * **Connected** - All vertices have at least one edge.
 * **Disconnected** - Some vertices may not have edges. It is possible to have standalone vertices or edges.
-
 * **Acyclic** - A graph without cycles. A directed acyclic graph is also called a DAG (a tree being an example of a DAG)
 * **Cyclic** - A graph that has cycles. A cycle is defined as a positive length that starts and ends at the same vertex.
 
@@ -27,7 +25,7 @@ Terms to know:
 
 ### Adjacency Matrix
 
-An **adjacency matrix** is a 2-dimentional array representation of graph. With `n` vertices, an `n * n` boolean matrix is created, where 1 represents an edge between two vertices.
+An **adjacency matrix** is a 2-dimentional array representation of a graph. With `n` vertices, an `n * n` boolean matrix is created, where 1 represents an edge between two vertices.
 
 In a adjacency matrix, an undirected graph will always be symmetric.
 
@@ -40,7 +38,7 @@ In a adjacency matrix, an undirected graph will always be symmetric.
 
 An **adjacency list** is the most common representation of graphs, and is a collection of linked lists or arrays listing all connected vertices for each vertex.
 
-While linked lists are great for this, and array of arrays serves just well. Maybe even a dictionary in Python, honestly.
+While linked lists are great for this, and array of arrays serves just as well. Maybe even a dictionary in Python, honestly.
 
 ## Weighted Graphs
 
@@ -99,6 +97,6 @@ No pseudo this time, but the provided steps make it pretty clear (I hope) what n
 
 ## Conclusion
 
-That's it! Feel smart? Good. Graphs seems complicated but are used all over, thanks to their relational an flexible nature.
+That's it! Feel smart? Good. Graph seems complicated but are used all over, thanks to their relational and flexible nature.
 
 Now go learn some more stuff about graphs. Something something Dijikstra's algorithm.
