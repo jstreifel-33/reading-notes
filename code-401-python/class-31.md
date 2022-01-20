@@ -25,7 +25,7 @@ So, normally to style things you would write CSS to go along with your HTML.
 
 Not with Tailwind.
 
-Tailwind is **utility driven styling framework** that uses pre-existing classes to style your HTML.
+Tailwind is a **utility driven styling framework** that uses pre-existing classes to style your HTML.
 
 Docs Example:
 
@@ -56,7 +56,7 @@ And the best part? **No custom CSS required.** Really.
 
 It may feel like in-line styling, but Tailwind also allows for responsive design and state variants in styling. Hover, focus, and other states are usable out of the box.
 
-Worried about repetition? Extract components. React is great at that. If that's not enough for you, you can even create custom Sass classes that apply the classes for you. (Sass is supported out fo the box in Next.js).
+Worried about repetition? Extract components. React is great at that. If that's not enough for you, you can even create custom Sass classes that apply the Tailwind classes for you. (Sass is supported out fo the box in Next.js).
 
 Which brings us to....
 
@@ -66,7 +66,7 @@ Source: [nextjs.org - Create a Next.js App](https://nextjs.org/learn/basics/crea
 
 ### What is Next.js?
 
-So let's get a little less candid.
+Let's get a little less candid.
 
 Next.js is a React Framework that aims to have best-in-class developer experience. It includes the following features:
 
@@ -83,7 +83,7 @@ Tons of people and companies use Next.js, probably for good reason.
 
 ### Actually getting started
 
-So first of all you'll need Node.js, version 10.13 or later.
+First of all you'll need Node.js, version 10.13 or later.
 
 Run this command:
 
