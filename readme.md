@@ -99,3 +99,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 28. [API Deployment](code-401-python/class-28.md)
 29. [DSA - Graphs](code-401-python/class-29.md)
 30. [Interview Review](code-401-python/class-30.md)
+31. [ES6, React, Tailwind, and Next.js](code-401-python/class-31.md)
