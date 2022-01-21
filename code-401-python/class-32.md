@@ -22,7 +22,7 @@ By this point, you should be pretty close to done with your app. Now style away.
 
 It's worth noting that if you have a different process working for you, stick to it. These steps are just recommendations from the React docs for going from 0 to full app in easy to handle steps.
 
-## Additional Resources:
+## Additional Resources
 
 * [ui.dev comprehensive React guide](https://ui.dev/react/)
 * [Tailwind heroicons](https://heroicons.com/)
