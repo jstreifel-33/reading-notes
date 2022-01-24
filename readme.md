@@ -100,4 +100,5 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 29. [DSA - Graphs](code-401-python/class-29.md)
 30. [Interview Review](code-401-python/class-30.md)
 31. [ES6, React, Tailwind, and Next.js](code-401-python/class-31.md)
-32. [React II](code-401-python/class-32.md)
+32. [React II - More React](code-401-python/class-32.md)
+33. [React III - Next.js and React Context](code-401-python/class-33.md)
