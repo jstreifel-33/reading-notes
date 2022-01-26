@@ -102,3 +102,4 @@ Looking for my Github profile or portfolio but ended up *here* instead?\
 31. [ES6, React, Tailwind, and Next.js](code-401-python/class-31.md)
 32. [React II - More React](code-401-python/class-32.md)
 33. [React III - Next.js and React Context](code-401-python/class-33.md)
+34. [React IV - Next.js Dynamic Routes and Deployment](code-401-python/class-34.md)
