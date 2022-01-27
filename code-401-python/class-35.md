@@ -11,4 +11,5 @@
 ## Additional Resources
 
 [realpython.com - What are Generators](https://realpython.com/lessons/what-are-python-generators/)
+
 [realpython.com - Decorators](https://realpython.com/primer-on-python-decorators/)
